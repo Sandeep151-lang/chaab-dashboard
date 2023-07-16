@@ -58,7 +58,6 @@ const plugins = [{
           height = chart.height,
           ctx = chart.ctx;
           ctx.restore();
-          const fontSize = "25px";
           ctx.font = "em sans-serif";
           ctx.textBaseline = "center";
           var text = "Finish Training",
