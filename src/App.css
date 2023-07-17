@@ -471,113 +471,189 @@ body {
   padding: 0 5px;
 }
 
-.heading  {
+.heading {
   margin-top: 5px;
   padding-left: 30px;
-  list-style:"\2191";
+  list-style: "\2191";
   color: #018e42;
-  
+
   /* color: rgba(255,255,255,0); */
 }
 
-
-
-.heading > p{
+.heading > p {
   text-align: center;
   font-size: 15px;
   font-weight: 700;
   /* height: 25.81px; */
-	overflow: hidden;
-	font-family: "Poppins";
-	font-weight: bold;
-	text-align: left;
-	/* line-height: 18.199999690056px; */
-	color:#333333;
+  overflow: hidden;
+  font-family: "Poppins";
+  font-weight: bold;
+  text-align: left;
+  /* line-height: 18.199999690056px; */
+  color: #333333;
   padding: 0em;
   margin: 0em;
 }
 
-
 .training-content {
-  padding-left:30px ;
+  padding-left: 30px;
   list-style: circle;
   height: fit-content;
   color: #2196f3;
-  
 }
 
-
-
-li{
+li {
   padding-bottom: 10px;
   width: 100%;
-	height: fit-content;
-	/* overflow: hidden; */
-	font-family: "Poppins";
-	/* font-size: 13px; */
-	/* font-weight: bold;
+  height: fit-content;
+  /* overflow: hidden; */
+  font-family: "Poppins";
+  /* font-size: 13px; */
+  /* font-weight: bold;
 	text-align: left;
 	line-height: 18.199999690056px;
 	color:#333333; */
 }
 
- .course{
+.course {
   text-align: center;
   font-size: 15px;
   font-weight: 700;
   /* height: 25.81px; */
-	overflow: hidden;
-	font-family: "Poppins";
-	font-weight: bold;
-	text-align: left;
-	/* line-height: 18.199999690056px; */
-	color:#333333;
+  overflow: hidden;
+  font-family: "Poppins";
+  font-weight: bold;
+  text-align: left;
+  /* line-height: 18.199999690056px; */
+  color: #333333;
   padding: 0em;
   margin: 0em;
 }
 
-.count{
+.count {
   color: gray;
   font-size: 10px;
   padding: 0em;
   margin: 0.2em;
 }
 
-
-.circular-chart-left-text{
+.circular-chart-left-text {
   padding: 20px;
   width: 100%;
 }
 
-.circular-chart-left{
+.circular-chart-left {
   padding: 20px;
   width: 100%;
   margin: auto;
 }
 
-.days-header-left{
+.days-header-left {
   /* display: grid; */
   padding: 16px;
   float: left;
   overflow: hidden;
-	font-family: "Poppins";
-	font-size: 1.2rem;
-	text-align: left;
-	color:#333333;
+  font-family: "Poppins";
+  font-size: 1.2rem;
+  text-align: left;
+  color: #333333;
 }
 
-.days-header-right{
-  padding:16px ;
+.days-header-right {
+  padding: 16px;
   float: right;
   overflow: hidden;
-	font-family: "Poppins";
-	font-size: 1.2rem;
-	text-align: left;
-	color:#333333;
+  font-family: "Poppins";
+  font-size: 1.2rem;
+  text-align: left;
+  color: #333333;
 }
 
-.bar-chart{
+.bar-chart {
   height: 360px;
   width: 90%;
   margin: auto;
+}
+
+@media only screen and (max-width: 550px) {
+  .card-head {
+    display: block;
+
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: auto;
+    /* width: 360px; */
+    height: auto;
+    border-radius: 10px;
+    background-color: white;
+    width: 360px;
+  }
+
+  .card-header {
+    margin-top: 20px;
+  }
+
+  .card-section {
+    margin: 10px auto;
+    width: 360px;
+  }
+
+  .chart-section {
+    display: block;
+    margin: auto;
+  }
+  .chart-left {
+    width: 360px;
+    margin: auto;
+    align-items: center;
+  }
+  .chart-right {
+    width: 360px;
+    margin: 10px auto;
+    align-items: center;
+  }
+
+  .training-chart-section {
+    display: block;
+    margin: auto;
+    align-items: center;
+    width: 360px;
+  }
+  .training-chart-mid {
+    width: 360px;
+    margin: auto;
+    height: 302px;
+  }
+  .training-chart-left {
+    width: 360px;
+    margin: auto;
+    height: 302px;
+  }
+
+  .training-chart-right {
+    width: 360px;
+    margin: 20px auto;
+    height: 302px;
+  }
+
+  .dougnut-circle {
+    width: 265px;
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  .navbar {
+    width: 100vw;
+  }
+
+  .nav-sm-title {
+    margin: 0px 17px;
+  }
+
+  .header {
+    display: grid;
+    grid-template-rows: 1fr;
+  }
 }
